@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="/submit" method="post">
+        <!-- Text input for username -->
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="give username" required>
+        </div>
+        <!-- Password input -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="enter password" required>
+        </div>
+        <!-- Radio buttons for gender -->
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <!-- checkbox example -->
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <!-- textarea example -->
+        <div>
+            <textarea name="comment" rows="3" cols="50">
+            Enter your comment here...
+          </textarea>
+        </div>
+        <div>
+            <label for="select">Select:</label>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+          </select>
+        </div>
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
